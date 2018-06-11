@@ -28,9 +28,17 @@ current_day = 11
 month = raw_input("What month were you born in? (use the number)")
 day = raw_input("What day were you born on?")
 
-if month >= current_month:
+if int(month) >= current_month:
+   month1 = (int(month) - int(current_month))
 
-   month1 = 12 -(month - current_month)
 else:
-    day >= current_day
-    day1 = 12 -(day - current_day)
+    month1 = int(12 - (int(current_month) - int(month)))
+if int(day) >= current_day:
+    day1 = (int(day) - int(current_day))
+else:
+    day1 = int(30 - (int(current_day) - int(day)))
+    if month1 == 0:
+        month1 = 11
+    else:
+        month1 = month1 - 1
+print "Your birthday will be in " + str(month1) + " months and " + str(day1) + " days."
