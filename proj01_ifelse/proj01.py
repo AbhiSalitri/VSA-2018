@@ -21,10 +21,10 @@ grade = str(raw_input("What grade are you in? (use the number)"))
 time = 12 - int(grade)
 print name,",you will graduate from high school in " + str(time) + " years."
 
-current_month = 6
-current_day = 12
 
-month = raw_input("What month were you born in?")
+current_month = raw_input("What is the current month? (use the number)")
+current_day = raw_input("What is the current day?")
+month = raw_input("What month were you born in? (use the word)")
 month = month[0].upper() + month[1:].lower()
 day = raw_input("What day were you born on?")
 if month == "January":
@@ -51,9 +51,9 @@ elif month == "November":
     month = 11
 else:
     month = int(12)
-if int(month) >= current_month:
-   month1 = (int(month) - int(current_month))
 
+if int(month) >= int(current_month):
+   month1 = (int(month) - int(current_month))
 else:
     month1 = int(12 - (int(current_month) - int(month)))
 if int(day) >= current_day:
@@ -64,4 +64,5 @@ else:
         month1 = 11
     else:
         month1 = month1 - 1
-print str(name) + ",your birthday will be in " + str(month1) + " months and " + str(day1) + " days."
+print "Your birthday will be in " + str(month1) + " months and " + str(day1) + " days."
+
