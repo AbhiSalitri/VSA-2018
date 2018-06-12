@@ -17,17 +17,40 @@
 print "Hi, my name is Abhi."
 name = raw_input("What is your name?")
 name = name[0].upper() + name[1:].lower()
-grade = str(raw_input("What grade are you in?"))
-grade = grade[0]
+grade = str(raw_input("What grade are you in? (use the number)"))
 time = 12 - int(grade)
-print name, ",you will graduate from high school in " + str(time) + " years."
+print name,",you will graduate from high school in " + str(time) + " years."
 
 current_month = 6
-current_day = 11
+current_day = 12
 
-month = raw_input("What month were you born in? (use the number)")
+month = raw_input("What month were you born in?")
+month = month[0].upper() + month[1:].lower()
 day = raw_input("What day were you born on?")
-
+if month == "January":
+    month = 1
+elif month == "February":
+    month = 2
+elif month == "March":
+    month = 3
+elif month == "April":
+    month = 4
+elif month == "May":
+    month = 5
+elif month == "June":
+    month = 6
+elif month == "July":
+    month = 7
+elif month == "August":
+    month = 8
+elif month == "September":
+    month = 9
+elif month == "October":
+    month = 10
+elif month == "November":
+    month = 11
+else:
+    month = int(12)
 if int(month) >= current_month:
    month1 = (int(month) - int(current_month))
 
