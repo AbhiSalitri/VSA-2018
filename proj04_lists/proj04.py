@@ -15,15 +15,11 @@ practice with lists
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 #and write a program that prints out all the elements of the list that are less than 5.
 
-empty_list = []
-for item in a:
-    if item < 5:
-        empty_list.append(item)
-print empty_list
 number = int(raw_input("Enter a number."))
 for numbers in a:
     if numbers < number:
         print numbers
+
 
 
 
@@ -38,6 +34,7 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 for numbers in c:
     if numbers == numbers in b:
         print numbers
+
 
 
 
@@ -76,13 +73,4 @@ if string[0] == string[-1]:
     print "Your string is a palindrome!"
 if string[0] != string[-1]:
     print "Your string is not a palindrome."
-
-
-
-
-
-
-
-
-
 
