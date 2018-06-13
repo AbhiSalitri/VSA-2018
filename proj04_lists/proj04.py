@@ -15,12 +15,15 @@ practice with lists
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 #and write a program that prints out all the elements of the list that are less than 5.
 
-random_list = [1,5,7,2,4,11,13,10,9]
-
-for item in random_list:
+empty_list = []
+for item in a:
     if item < 5:
-        print item
-
+        empty_list.append(item)
+print empty_list
+number = int(raw_input("Enter a number."))
+for numbers in a:
+    if numbers < number:
+        print numbers
 
 
 
