@@ -46,14 +46,14 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 d = ["b", "a", "f", "y", "a", "t", "_", "p", "a", "R"]
 # and write a program that replaces all “a” with “*”.
 
-for numbers in d:
-    old_name = input("a")
-    new_name = input("*")
-    counter = 0
-    if d[counter] == old_name:
-        d[counter] = new_name
-        dcounter = counter + 1
-
+#counter = 0
+#for numbers in d:
+    #old_name = "a"
+    #new_name = "*"
+    #if  numbers == old_name:
+        #d[counter] = new_name
+    #counter = counter + 1
+#print d
 
 
 
@@ -64,6 +64,14 @@ for numbers in d:
 #Part IV
 #Ask the user for a string, and print out whether this string is a palindrome or not.
 
+empty_list = []
+string = raw_input("Type a string in the space provided, to determine wheather or not it is a palindrome.")
+for letters in string:
+    empty_list.append(letters)
+if string[0] == string[-1]:
+    print "Your string is a palindrome!"
+if string[0] != string[-1]:
+    print "Your string is not a palindrome."
 
 
 
