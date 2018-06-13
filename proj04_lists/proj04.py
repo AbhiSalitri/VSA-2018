@@ -15,7 +15,11 @@ practice with lists
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 #and write a program that prints out all the elements of the list that are less than 5.
 
+random_list = [1,5,7,2,4,11,13,10,9]
 
+#for item in random_list:
+    #if item < 5:
+        #print item
 
 
 
@@ -28,6 +32,10 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 # that are common between the lists (without duplicates).
 # Make sure your program works on two lists of different sizes.
 
+#for numbers in c:
+    #if numbers == numbers in b:
+        #print numbers
+
 
 
 
@@ -38,6 +46,13 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 d = ["b", "a", "f", "y", "a", "t", "_", "p", "a", "R"]
 # and write a program that replaces all “a” with “*”.
 
+for numbers in d:
+    old_name = input("a")
+    new_name = input("*")
+    counter = 0
+    if d[counter] == old_name:
+        d[counter] = new_name
+        dcounter = counter + 1
 
 
 
@@ -48,6 +63,8 @@ d = ["b", "a", "f", "y", "a", "t", "_", "p", "a", "R"]
 
 #Part IV
 #Ask the user for a string, and print out whether this string is a palindrome or not.
+
+
 
 
 
