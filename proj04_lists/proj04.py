@@ -17,9 +17,9 @@ a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
 random_list = [1,5,7,2,4,11,13,10,9]
 
-#for item in random_list:
-    #if item < 5:
-        #print item
+for item in random_list:
+    if item < 5:
+        print item
 
 
 
@@ -32,9 +32,9 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 # that are common between the lists (without duplicates).
 # Make sure your program works on two lists of different sizes.
 
-#for numbers in c:
-    #if numbers == numbers in b:
-        #print numbers
+for numbers in c:
+    if numbers == numbers in b:
+        print numbers
 
 
 
@@ -46,14 +46,14 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 d = ["b", "a", "f", "y", "a", "t", "_", "p", "a", "R"]
 # and write a program that replaces all “a” with “*”.
 
-#counter = 0
-#for numbers in d:
-    #old_name = "a"
-    #new_name = "*"
-    #if  numbers == old_name:
-        #d[counter] = new_name
-    #counter = counter + 1
-#print d
+counter = 0
+for numbers in d:
+    old_name = "a"
+    new_name = "*"
+    if  numbers == old_name:
+        d[counter] = new_name
+    counter = counter + 1
+print d
 
 
 
@@ -66,6 +66,7 @@ d = ["b", "a", "f", "y", "a", "t", "_", "p", "a", "R"]
 
 empty_list = []
 string = raw_input("Type a string in the space provided, to determine wheather or not it is a palindrome.")
+string = string.lower()
 for letters in string:
     empty_list.append(letters)
 if string[0] == string[-1]:
