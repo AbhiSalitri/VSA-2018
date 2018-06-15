@@ -73,7 +73,7 @@ while stop == 0:
     print(worde)
     print "You have " + str(a) + " incorrect guesses left."
     print "Available letters: " + str(abc)
-    guess = raw_input("Please guess a letter. (or exit to leave the game)")
+    guess = raw_input("Please guess a letter.")
     abc.remove(guess)
     correct = False
     counter = 0
@@ -83,9 +83,6 @@ while stop == 0:
             correct = True
             print "Correct!"
         counter = counter + 1
-        if guess == "exit":
-            print "You have left the game."
-            break
     if correct == False:
             a = a - 1
             print "That's incorrect!"
