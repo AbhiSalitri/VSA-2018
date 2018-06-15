@@ -76,16 +76,9 @@ while stop == 0:
             print "That's incorrect!"
     if empty == worde:
         stop = 1
-        print worde
+        print word
         print "You guessed the word!"
     if a == 0:
         stop = 1
-        print"You lost!"
+        print "You lost!"
         print "The word was " + word + "!"
-
-
-
-
-
-
-
