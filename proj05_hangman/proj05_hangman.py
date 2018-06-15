@@ -53,15 +53,27 @@ for letter in word:
     empty.append(letter)
 worde = ["_"] * len(empty)
 abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-a = 8
 print "Welcome to Tyler and Abhi's Hangman Game!"
 length = len(word)
+difficulty = raw_input("Select a difficulty. (easy, normal, hard, or extreme)")
+if difficulty == "easy":
+    a = 11
+elif difficulty == "normal":
+    a = 9
+elif difficulty == "hard":
+    a = 7
+elif difficulty == "difficulty":
+    a = 5
+else:
+    a = 3
+    difficulty = "impossible"
+print "Your difficulty is " + difficulty + "."
 print "I am thinking of a word that is " + str(length) + " letters long."
 while stop == 0:
     print(worde)
     print "You have " + str(a) + " incorrect guesses left."
     print "Available letters: " + str(abc)
-    guess = raw_input("Please guess a letter.")
+    guess = raw_input("Please guess a letter. (or exit to leave the game)")
     abc.remove(guess)
     correct = False
     counter = 0
@@ -71,13 +83,16 @@ while stop == 0:
             correct = True
             print "Correct!"
         counter = counter + 1
+        if guess == "exit":
+            print "You have left the game."
+            break
     if correct == False:
             a = a - 1
             print "That's incorrect!"
     if empty == worde:
         stop = 1
-        print word
         print "You guessed the word!"
+        print "The word was " + word + "!"
     if a == 0:
         stop = 1
         print "You lost!"
